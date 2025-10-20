@@ -1,1 +1,130 @@
+/* Reset semantic elements */
+html, body, header, nav, main, section, article, aside, footer, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  background: linear-gradient(to left, #fe9972, #ffe5dc);
+  font-family: 'Crimson Pro', serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #a22c02;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: rgba(162, 44, 2, 0.9);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+nav li {
+  margin: 0 15px;
+  font-family: 'B612', sans-serif;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffe5dc;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+/* Corner class */
+.corner {
+  border-radius: 12px;
+}
+
+/* Articles */
+article:hover {
+  background-color: #ffe5dc;
+  color: #a22c02;
+  transition: 0.3s;
+}
+
+/* Figure and figcaption */
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  color: #555;
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(162, 44, 2, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* --------------------------
+   Media Query for Tablet Viewport
+   -------------------------- */
+@media screen and (min-width: 600px) {
+  article {
+    width: 43%;
+    float: left;
+    height: 160px;
+  }
+
+  footer {
+    clear: left;
+  }
+}
+
+/* --------------------------
+   Media Query for Desktop Viewport
+   -------------------------- */
+@media screen and (min-width: 900px) {
+  article {
+    width: 27%;
+    height: 140px;
+  }
+
+  article:hover {
+    background-color: #ffe5dc;
+    color: #a22c02;
+  }
+}
 
